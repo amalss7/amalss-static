@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> amal form</title>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align:center">
+          <h2><u>CONTACT FORM</u></h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+          
+          <div class="column">
+            <form id="submit-form" action="https://script.google.com/macros/s/AKfycbxC4p-1us-lVyDroZCCGz7NFNowRla0U-p0gsVAHw/exec">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name..">
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="email" placeholder="Your EMAIL..">
+              <label for="password">password</label>
+              <input type="password" id="npassword" name="password" placeholder="your password..">
+              <label for="country">place</label>
+              <select id="country" name="color">
+                <option value="australia">CALICUT</option>
+                <option value="canada">ERANAKULAM</option>
+                <option value="usa">MALAPURAM</option>
+                <option value="india">KASARKODE</option>
+                <option value="kannur">KANNUR</option>
+                 <option value="thrissur">THIRSSUR</option>
+                 <option value="thiravandram">TRIVANDRAM</option>
+                 <option value="kollam">KOLLAM</option>
+                 <option value="palakkad">PALAKKAD</option>
+                 <option value="pathanamthita">PATHANAMTHITA</option>
+                 <option value="kottayam">KOTTAYAM</option>
+                 <option value="iddukki">IDDUKKI</option>
+                 <option value="alapuzhya">alapuzhya</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="column">
+        <a href="https://amal-webber.github.io/amal-static-web/"><img src="website.png" style="width: 60%;"></a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <h3>AMAL SS</h3>
+          <p>   </p>
+          <ul class="socials">
+            <li><a href="https://twitter.com/AMALSS14861708"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100057988250692"><i class="fa fa-facebook"></i></i></a></li>
+            <li><a href="https://github.com/Amal-webber"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://studio.youtube.com/channel/UCVhzIoTD7czTXpZPzvJJIfg/editing/images"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=919400168640"><i class="fa fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2020 amalwebber/ip. desigined by<span>AMAL SS </span> </p>
+        </div>
+      </footer>
+
+      
+   <script> 
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxC4p-1us-lVyDroZCCGz7NFNowRla0U-p0gsVAHw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    alert("THANKS FOR SUBMITTING .....")
+                    window.location.reload()
+                    window.location.href="https://amal-webber.github.io/amal-static-web/"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
