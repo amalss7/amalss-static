@@ -44,6 +44,7 @@
               <label for="subject">Subject</label>
               <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
               <input type="submit" value="Submit">
+                <input type="reset" value="reset">
             </form>
           </div>
           <div class="column">
@@ -77,8 +78,8 @@
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Form submitted successfully")
-                    alert("THANKS FOR SUBMITTING .....")
+                    alert("Form submitted successfully 🎉🎉🎉🎉")
+                    alert("🙏🙏🙏🙏THANKS FOR SUBMITTING ....🙏🙏🙏🙏.")
                     window.location.reload()
                     window.location.href="https://amal-webber.github.io/amal-static-web/"
                 },
