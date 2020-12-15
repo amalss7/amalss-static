@@ -29,7 +29,28 @@
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: blue;
+  }
+input[type=reset] {
+
+    background-color: #4CAF50;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    cursor: pointer;
+
+  }
+
+  
+
+  input[type=reset]:hover {
+
+    background-color: blue;
+
   }
   
   /* Style the container/contact section */
@@ -68,7 +89,7 @@
 
 }
 body{
-  background-color:white;
+  background-color: violet;
 }
 footer{
   position: absolute;
