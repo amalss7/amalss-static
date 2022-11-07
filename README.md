@@ -1,0 +1,1 @@
+# amalss-static
